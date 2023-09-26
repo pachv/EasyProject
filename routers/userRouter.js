@@ -5,7 +5,7 @@ const router = new Router()
 
 const validator = require('express-validator')
 
-router.post('/registrate',
+router.post('/create-user',
     validator.body('email').isEmail(),
     validator.body('password').isLength({min:1,max:20}),
     userController.registration)

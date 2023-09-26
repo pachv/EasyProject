@@ -15,7 +15,7 @@ const errorMiddleware = require('./middleware/error_middleware')
 app.use(express.json())
 app.use(cookieParser())
 app.use('/student',studentRouter)
-app.use('/user',userRouter)
+app.use('/api',userRouter)
 app.use(errorMiddleware)
 
 
