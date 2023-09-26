@@ -1,3 +1,11 @@
 development:
+
     port: 1236
-    db_url : 'mongodb://localhost:27017'
+    db_url : 'mongodb://localhost:27017/studentDB'
+
+    jwt:
+        access_secret: "makeYoutOwnDreams"
+        refresh_secret: "whenYouHavetime"
+
+    admin:
+        admin_token : "PKEjWHTsntnFPko7FqpMcKTJIjaEQ3om"
